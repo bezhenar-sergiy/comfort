@@ -1,0 +1,36 @@
+.suppliers {
+  &__wrapper {
+    padding-top: 62px;
+    padding-bottom: 58px;
+    box-shadow: 5px 5px 15px rgb(176 174 168 / 25%);
+    background-color: var(--color-alabaster);
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 49px;
+    max-width: 778px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 94px;
+    }
+  }
+}
+
+.container {
+}
+
+.title {
+}
+
+.yellow {
+}

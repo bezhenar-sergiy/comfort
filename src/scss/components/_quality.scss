@@ -1,0 +1,40 @@
+.quality {
+  &__wrapper {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    grid-column: 4 span;
+    border-radius: 10px;
+    padding: 15px 21px 20px 22px;
+    box-shadow: 5px 5px 15px rgb(176 174 168 / 25%);
+    background-color: var(--color-light);
+  }
+
+  &__icon {
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    color: var(--color-yellow);
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: currentcolor;
+    }
+  }
+  &__content {}
+
+  &__subtitle {
+    margin-bottom: 17px;
+  }
+  &__descr {}
+}

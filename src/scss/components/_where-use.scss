@@ -1,0 +1,60 @@
+.where-use {
+  &__wrapper {
+    padding-top: 60px;
+    padding-bottom: 105px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__left {
+    grid-column: 4 span;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    text-align: left;
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+    max-width: 341px;
+  }
+
+  &__btn {
+    padding: 14px 62px;
+  }
+
+  &__right {
+    grid-column: 8 span;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px 20px;
+  }
+
+  &__item {
+    border-radius: 5px;
+    padding: 10px 11px 8px;
+    box-shadow: 5px 5px 15px rgb(176 174 168 / 25%);
+    background: var(--color-light);
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    width: 372px;
+    height: 201px;
+    filter: drop-shadow(5px 5px 15px rgb(176 174 168 / 25%));
+  }
+
+  &__text {
+    padding-left: 14px;
+  }
+}

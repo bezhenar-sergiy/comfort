@@ -1,0 +1,99 @@
+.hero {
+  &__wrapper {
+    background: linear-gradient(180deg, #414055 0.26%, #222639 100.83%);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: normal;
+  }
+
+  &__content {
+    display: flex;
+    padding-left: max(15px, calc((100% - 1216px) / 2));
+  }
+
+  &__left {
+    position: relative;
+    flex-shrink: 0;
+    padding-top: 140px;
+    padding-bottom: 198px;
+    width: 673px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 43px;
+    font-family: "Exo";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    line-height: 110%;
+    color: var(--color-light);
+
+    span {
+      color: var(--color-yellow);
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 130%;
+    color: var(--color-light);
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+
+    &:last-child {
+      padding-left: 9px;
+    }
+
+    &--italic {
+      font-style: italic;
+    }
+
+    &--yellow {
+      border: 1px solid var(--color-yellow);
+      border-radius: 5px;
+      padding: 14px 31px;
+      box-shadow: 5px 5px 15px rgb(0 0 0 / 24%);
+      font-weight: 600;
+      font-feature-settings: "pnum" on, "lnum" on;
+      font-size: 16px;
+      line-height: 140%;
+      color: var(--color-yellow);
+    }
+
+    &--decor {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 242px;
+        top: 46px;
+        width: 111px;
+        height: 64px;
+        background-image: url("../../img/hero-arrow.svg");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__btn {
+    margin-left: 32px;
+    padding: 14px 38px;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+  }
+
+  &__right {
+    overflow: hidden;
+    width: calc(100% - 673px);
+  }
+}
