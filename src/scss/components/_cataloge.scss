@@ -1,0 +1,130 @@
+.cataloge {
+  &__wrapper {
+    padding-top: 105px;
+    padding-bottom: 130px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 47px;
+    max-width: 778px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 135px);
+    margin-bottom: 35px;
+    gap: 20px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 5px 5px 15px rgb(176 174 168 / 25%);
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 130%;
+    color: var(--color-gray);
+  }
+
+  &__btn {
+    padding: 14px 35px;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__size {
+    grid-column: 5 span;
+    padding-top: 87px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: "Exo";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  &__dimensions {
+    margin-bottom: 47px;
+  }
+
+  &__thickness {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 107px;
+      top: 12px;
+      width: 194px;
+      height: 139px;
+      background-image: url("../img/cataloge/thickness.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__bg {
+    grid-column: 7 span;
+    padding-top: 89px;
+    padding-left: 45px;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.cataloge-dimensions {
+  display: flex;
+  justify-content: flex-start;
+
+  &__list {
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 21px;
+    font-weight: 500;
+    font-feature-settings: "pnum" on, "lnum" on;
+    font-size: 25px;
+    line-height: 130%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: inline-block;
+      border-radius: 100px;
+      width: 7px;
+      height: 7px;
+      background-color: var(--color-yellow);
+      transform: translateY(-50%);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -75,7 +75,7 @@
         top: 46px;
         width: 111px;
         height: 64px;
-        background-image: url("../../img/hero-arrow.svg");
+        background-image: url("../img/hero-arrow.svg");
         background-repeat: no-repeat;
       }
     }
@@ -95,5 +95,9 @@
   &__right {
     overflow: hidden;
     width: calc(100% - 673px);
+  }
+
+  &__image {
+    height: 100%;
   }
 }

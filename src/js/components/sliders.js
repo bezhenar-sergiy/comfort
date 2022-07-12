@@ -19,3 +19,19 @@ const heroSlider = new Swiper('.hero__right', {
     prevEl: '.slider-button-prev',
   },
 });
+
+// example slider
+const exampleSlider = new Swiper('.example__slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.example-button-next',
+    prevEl: '.example-button-prev',
+  },
+  pagination: {
+    el: '.example-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
